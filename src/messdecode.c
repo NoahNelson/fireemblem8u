@@ -1,9 +1,10 @@
 #include "global.h"
 
-#include "proc.h"
+#include "anti_huffman.h"
 #include "bmio.h"
 #include "bmitem.h"
 #include "bmunit.h"
+#include "proc.h"
 
 const char *gUnknown_08591AA4[][2] =
 {
@@ -48,6 +49,7 @@ void PrependArticleToString(char *a, const char *b, s8 c)
         a[i] = r6[i];
 }
 
+// Replaced in this branch with RemoveHuffmanPadding
 void SomethingRelatedToText(s8 *a)
 {
     s16 r3 = 0;
@@ -81,7 +83,7 @@ char *GetStringFromIndex(int index)
     if (index == gUnknown_0202B6AC)
         return gUnknown_0202A6AC.buffer0202A6AC;
     CallARM_DecompText(gMsgStringTable[index], gUnknown_0202A6AC.buffer0202A6AC);
-    SomethingRelatedToText(gUnknown_0202A6AC.buffer0202A6AC);
+    RemoveHuffmanPadding(gUnknown_0202A6AC.buffer0202A6AC);
     gUnknown_0202B6AC = index;
     return gUnknown_0202A6AC.buffer0202A6AC;
 }
@@ -89,7 +91,7 @@ char *GetStringFromIndex(int index)
 char *GetStringFromIndexInBuffer(int index, char *buffer)
 {
     CallARM_DecompText(gMsgStringTable[index], buffer);
-    SomethingRelatedToText(buffer);
+    RemoveHuffmanPadding(buffer);
     return buffer;
 }
 

@@ -769,7 +769,7 @@ extern u32 gUnknown_03003240[];
 extern u32 *gUnknown_03003744;
 extern void (*sHBlankHandler2)(void);
 // extern ??? gUnknown_03003750
-// extern ??? gUnknown_03004150
+extern void (*gARM_HuffmanTextDecomp)(const char *, char *);
 // extern ??? gUnknown_03004154
 extern u16* gUnknown_03004158;
 // extern ??? gUnknown_03004160

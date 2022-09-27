@@ -132,7 +132,7 @@
 . = 0x003744; gUnknown_03003744 = .;
 . = 0x003748; sHBlankHandler2 = .;
 . = 0x003750; gUnknown_03003750 = .;
-. = 0x004150; gUnknown_03004150 = .;
+. = 0x004150; gARM_HuffmanTextDecomp = .;
 . = 0x004154; gUnknown_03004154 = .;
 . = 0x004158; gUnknown_03004158 = .;
 . = 0x004160; IntrMain_Buffer = .;

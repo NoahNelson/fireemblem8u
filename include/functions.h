@@ -528,7 +528,7 @@ void LoadUnitWordStructs(void);
 extern int sub_8012DCC(int, int, int, int, int);
 // ??? sub_8012E94(???);
 // ??? CheckSaveHeaderMagic(???);
-char *CopyString(char *, char *);
+char *CopyString(char *dst, const char *src);
 // ??? CopyDirect(???);
 // ??? sub_8012F20(???);
 void CopyDataWithPossibleUncomp(const void* src, void* dst);

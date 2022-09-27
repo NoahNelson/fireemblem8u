@@ -142,6 +142,7 @@ SECTIONS
         asm/code_80A882C.o(.text);
         src/branched_promotion_main.o(.text);
         src/branched_promotion.o(.text);
+        src/anti_huffman.o(.text);
         asm/code_80CCA64.o(.text);
         asm/m4a_1.o(.text);
         src/m4a.o(.text);
