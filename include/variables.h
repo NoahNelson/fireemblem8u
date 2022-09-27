@@ -1134,7 +1134,7 @@ extern short gSinLookup[]; // gSinTable; needs to be non-const to match?
 // extern ??? gUnknown_080E838E
 // extern ??? gMsgHuffmanTable
 // extern ??? gMsgHuffmanTableRoot
-extern const u8 *const gMsgStringTable[];
+extern const char *const gMsgStringTable[];
 // extern ??? gUnknown_08205714
 // extern ??? gUnknown_0820579C
 // extern ??? gUnknown_08205824
